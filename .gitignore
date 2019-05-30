@@ -1,0 +1,10 @@
+
+*.jpeg
+
+jpg \(cópia\)/0/
+
+jpg/1/
+
+jpg \(cópia\)/1/\.DS_Store
+
+jpg/0/\.DS_Store
