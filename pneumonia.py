@@ -34,6 +34,6 @@ network = dropout(network, 0.5)
 network = fully_connected(network, 2, activation='softmax')
 network = regression(network, optimizer='momentum',loss='categorical_crossentropy',learning_rate=0.001)
 
-model = tflearn.DNN(network, tensorboard_verbose=3, tensorboard_dir='3pneumonia'+str(size))
+model = tflearn.DNN(network, tensorboard_verbose=2, tensorboard_dir='pneumonia4')
 
-model.fit(X, Y, validation_set=0.1, batch_size=4,n_epoch=5, snapshot_step=100, show_metric=True, run_id='pneumonia')
+model.fit(X, Y, validation_set=0.1, n_epoch=6, snapshot_step=100, show_metric=True, run_id='pneumonia')
